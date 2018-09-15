@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edit_magin_bottom"
+        android:background="@drawable/image_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top"
+        android:layout_marginBottom="@dimen/edit_magin_bottom"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@drawable/rounderborder"
+        android:hint="@string/hint_email_phone"/>
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top"
+        android:layout_marginBottom="@dimen/edit_magin_bottom"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/rounderborder"
+        android:hint="@string/hint_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top"
+        android:background="@drawable/rounderborder1"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/white"
+        android:text="@string/text_sign_up"
+        android:textSize="@dimen/text_size_small"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:background="@drawable/dauhoi"
+        android:layout_alignRight="@+id/btn_sign_up"
+        android:layout_alignTop="@+id/btn_sign_up"
+        android:layout_width="33dp"
+        android:layout_height="33dp" />
+</RelativeLayout>
